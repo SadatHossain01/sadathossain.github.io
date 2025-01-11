@@ -9,14 +9,33 @@ const hero: {
 	description: string;
 	links: Array<{ label: string; href: string; icon: `i-carbon-${string}` }>;
 } = {
-	title: `${BaseData.fullName},`,
+	title: `${BaseData.fullName}`,
 	description:
-		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		'I am a passionate and curious learner. Beyond my academic pursuits, I have actively explored diverse areas of Computer Science, including competitive programming, hackathons, and deep learning competitions. I am eager to embrace opportunities that enable me to apply my problem-solving skills and curiosity to address real-world challenges while further expanding my expertise.',
 	links: [
-		{ label: 'GitHub', href: 'https://github.com', icon: 'i-carbon-logo-github' },
-		{ label: 'LinkedIn', href: 'https://linkedin.com', icon: 'i-carbon-logo-linkedin' },
-		{ label: 'Twitter', href: 'https://twitter.com', icon: 'i-carbon-logo-twitter' },
-		{ label: 'Email', href: 'mailto:riadh.adrani@pm.me', icon: 'i-carbon-at' }
+		{ label: 'GitHub', href: 'https://github.com/SadatHossain01', icon: 'i-carbon-logo-github' },
+		{
+			label: 'LinkedIn',
+			href: 'https://www.linkedin.com/in/SadatHossain01',
+			icon: 'i-carbon-logo-linkedin'
+		},
+		{
+			label: 'YouTube',
+			href: 'https://www.youtube.com/@SadatHossain01',
+			icon: 'i-carbon-logo-youtube'
+		},
+		{
+			label: 'Facebook',
+			href: 'https://www.facebook.com/sadathossain01',
+			icon: 'i-carbon-logo-facebook'
+		},
+		{
+			label: 'Instagram',
+			href: 'https://www.instagram.com/sadathossain01',
+			icon: 'i-carbon-logo-instagram'
+		},
+		{ label: 'Twitter', href: 'https://x.com/SadatHossain01', icon: 'i-carbon-logo-x' },
+		{ label: 'Email', href: 'mailto:sadatho2014@gmail.com', icon: 'i-carbon-at' }
 	]
 };
 
