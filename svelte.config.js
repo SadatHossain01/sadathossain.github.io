@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const base = '/sadathossain.github.io';
+const base = '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
