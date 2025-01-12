@@ -1,16 +1,18 @@
 import { base } from '$app/paths';
-import Markdown from '$lib/components/common/markdown/markdown.svelte';
-
 const url = (file: string) => `${base}/logos/${file}`;
-
-const asset = (lightFilename: string, darkFilename = lightFilename) => {
-	return { light: url(lightFilename), dark: url(darkFilename) };
+const asset = (lightFilename: string, darkFilename = lightFilename, absolute = false) => {
+	if (absolute) {
+		return { light: lightFilename, dark: darkFilename };
+	} else {
+		return { light: url(lightFilename), dark: url(darkFilename) };
+	}
 };
 
 const Assets = {
 	Bash: asset('bash.svg'),
 	C: asset('c.svg'),
 	Cpp: asset('cpp.svg'),
+	DxBall: asset('dxball2_logo.png'),
 	Numpy: asset('numpy.svg'),
 	Pandas: asset('pandas.svg'),
 	Scikitlearn: asset('scikit-learn.svg'),
@@ -24,10 +26,13 @@ const Assets = {
 	JavaScript: asset('js.png'),
 	Java: asset('java.png'),
 	PyTorch: asset('pytorch.png'),
+	OpenGL: asset('opengl.png'),
 	Oracle: asset('oracle.svg'),
 	Postman: asset('postman.png'),
 	PostgreSQL: asset('postgres.png'),
 	Unknown: asset('no-img.svg'),
+	Exploremate: asset('exploremate.png'),
+	TaskFlow: asset('taskflow.png'),
 	Tailwind: asset('tailwind.svg'),
 	HTML: asset('html.svg'),
 	Premiere: asset('premiere.svg'),
@@ -38,7 +43,10 @@ const Assets = {
 	Markdown: asset('markdown-mark.svg'),
 	Git: asset('git.svg'),
 	Github: asset('github-mark.svg', 'github-mark-white.svg'),
-	GithubActions: asset('github-actions-black.svg', 'github-actions-blue.png')
+	GithubActions: asset('github-actions-black.svg', 'github-actions-blue.png'),
+	SHKSC: asset('shksc.png'),
+	NDC: asset('ndc.png'),
+	BUET: asset('buet.svg')
 };
 
 export default Assets;

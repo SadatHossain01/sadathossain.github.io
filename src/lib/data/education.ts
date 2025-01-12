@@ -5,28 +5,40 @@ const title = 'Education';
 
 const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Bachelor of Science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		location: 'Bangladesh',
+		logo: Assets.BUET,
+		name: 'BSc',
+		organization: 'Bangladesh University of Engineering and Technology',
+		period: { from: new Date(2020, 1, 22) },
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'bsc',
+		subjects: ['DSA', 'Algorithm', 'Database', 'C', 'C++', 'Java', 'Network', 'Operating System']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Higher Secondary School Certificate',
 		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		location: 'Bangladesh',
+		logo: Assets.NDC,
+		name: 'HSC',
+		organization: 'Notre Dame College',
+		period: { from: new Date(2017, 6, 1), to: new Date(2018, 11, 31) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'hsc',
+		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English']
+	},
+	{
+		degree: 'Secondary School Certificate',
+		description: '',
+		location: 'Bangladesh',
+		logo: Assets.SHKSC,
+		name: 'SSC',
+		organization: 'Shamsul Haque Khan School & College',
+		period: { from: new Date(2010, 0, 1), to: new Date(2017, 1, 28) },
+		shortDescription: '',
+		slug: 'ssc',
+		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English']
 	}
 ];
 

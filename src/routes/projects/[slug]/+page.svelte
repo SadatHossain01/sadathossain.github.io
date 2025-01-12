@@ -21,11 +21,13 @@
 		($mode == 'dark' ? data?.item?.logo.dark : data.item?.logo.light) ?? Assets.Unknown.light
 	);
 
-	let duration = $derived(
-		`${getMonthAndYear(data.item?.period.from)} - ${getMonthAndYear(data.item?.period.to)} · ${computeExactDuration(
-			data.item?.period.from ?? new Date(),
-			data.item?.period.to
-		)}`
+	let timeline = $derived(
+		data.item?.period.to
+			? `${getMonthAndYear(data.item?.period.from)} - ${getMonthAndYear(data.item?.period.to)} · ${computeExactDuration(
+					data.item?.period.from ?? new Date(),
+					data.item?.period.to
+				)}`
+			: `${getMonthAndYear(data.item?.period.from)}`
 	);
 </script>
 
@@ -37,7 +39,7 @@
 			<div class="flex w-full flex-col items-center justify-center gap-4">
 				<H1>{data.item.name}</H1>
 				<Muted>{data.item.type}</Muted>
-				<Muted>{duration}</Muted>
+				<Muted>{timeline}</Muted>
 				<Separator />
 				<div class="flex flex-row flex-wrap justify-center gap-2">
 					{#each data.item.links as link (link.to)}

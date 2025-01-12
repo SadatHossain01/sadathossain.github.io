@@ -9,8 +9,9 @@ const items: Array<{
 }> = [
 	{ title: 'Skills', icon: 'i-carbon-assembly-cluster', href: '/skills' },
 	{ title: 'Projects', icon: 'i-carbon-cube', href: '/projects' },
-	{ title: 'Experience', icon: 'i-carbon-development', href: '/experience' },
+	// { title: 'Experience', icon: 'i-carbon-development', href: '/experience' },
 	{ title: 'Education', icon: 'i-carbon-education', href: '/education' },
+	{ title: 'Blogs', icon: 'i-carbon-blog', href: '/blogs' },
 	{ title: 'Resume', icon: 'i-carbon-document', href: '/resume' }
 ];
 

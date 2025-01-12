@@ -6,7 +6,7 @@
 	--badge-bg: hsl(var(--secondary) / var(--tw-bg-opacity, 1));
 
 	--code-border: rgba(211, 211, 211, 0.639);
-	--code-text: #abb2bf;
+	--code-text: #abb2af;
 	--code-bg: #282c34;
 	--code-keyword: #c678dd;
 	--code-string: #98c379;
@@ -169,4 +169,29 @@ markdown a :is(code):not(pre code) {
 	border-top: 0.5px solid var(--hr-border);
 	color: var(--hr-border);
 	margin: 20px 0px;
+}
+
+.code-block-container {
+	position: relative;
+}
+
+.copy-button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background-color: var(--badge-bg);
+	border: 1px solid var(--hr-border);
+	color: var(--code-text);
+	
+	/* color: red; */
+	font-size: 0.8em;
+	padding: 5px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.copy-button:hover {
+	background-color: var(--code-bg);
+	color: var(--link-text);
 }

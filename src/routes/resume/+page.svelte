@@ -5,7 +5,7 @@
 </script>
 
 <TitledPage title={ResumeData.title}>
-	<a href={ResumeData.resume} class="mx-auto">
+	<a href={ResumeData.resume} class="mx-auto" target="_blank" download>
 		<Button>Download</Button>
 	</a>
 	<iframe src={ResumeData.resume} class="h-full w-full" title={ResumeData.title}></iframe>

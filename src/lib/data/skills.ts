@@ -263,6 +263,15 @@ const items = [
 		name: 'Beautiful Soup',
 		category: 'library'
 	}),
+	defineSkill({
+		slug: 'opengl',
+		color: 'black',
+		description:
+			'OpenGL (Open Graphics Library) is a cross-language, cross-platform application programming interface for rendering 2D and 3D vector graphics. The API is typically used to interact with a graphics processing unit (GPU), to achieve hardware-accelerated rendering.',
+		logo: Assets.OpenGL,
+		name: 'OpenGL',
+		category: 'library'
+	}),
 
 	// Database
 	defineSkill({
@@ -341,6 +350,24 @@ const items = [
 			'GitHub is a web-based platform for version control using Git. It is also where users can collaborate on or adopt open-source projects, fork code, share ideas, and more.',
 		logo: Assets.Github,
 		name: 'GitHub',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'flex',
+		color: 'black',
+		description:
+			'Flex is a tool for generating scanners: programs that recognize lexical patterns in text. Flex reads the given input files, or its standard input if no file names are given, for a description of a scanner to generate. The description is in the form of pairs of regular expressions and C code, called rules.',
+		logo: Assets.Unknown,
+		name: 'Flex',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'bison',
+		color: 'black',
+		description:
+			'Bison is a general-purpose parser generator that converts a grammar description for an LALR context-free grammar into a C program to parse that grammar. Once you are proficient with Bison, you can use it to develop a wide range of language parsers, from those used in simple desk calculators to complex programming languages.',
+		logo: Assets.Unknown,
+		name: 'Bison',
 		category: 'devtools'
 	}),
 
