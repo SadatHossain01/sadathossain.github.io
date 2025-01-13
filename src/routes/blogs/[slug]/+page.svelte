@@ -7,6 +7,7 @@
 	import H1 from '$lib/components/ui/typography/h1.svelte';
 	import Muted from '$lib/components/ui/typography/muted.svelte';
 	import type { Blog } from '$lib/data/types';
+	import { mode } from 'mode-watcher';
 
 	let { data }: { data: { item?: Blog } } = $props();
 	let title = $derived(`${data?.item?.name ?? 'Not Found'} - Blog`);
@@ -19,13 +20,14 @@
 				})
 			: ''
 	);
+	console.log(data.item);
 </script>
 
 <BasePage {title}>
 	{#if !data.item}
 		<EmptyResult />
 	{:else}
-		<FancyBanner img={data.item.banner}>
+		<FancyBanner img={$mode === 'dark' ? data.item.banner.dark : data.item.banner.light}>
 			<div class="flex w-full flex-col items-center justify-center gap-4">
 				<H1>{data.item.name}</H1>
 				<Muted>{data.item.type}</Muted>

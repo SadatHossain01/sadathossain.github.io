@@ -1,11 +1,24 @@
 import { base } from '$app/paths';
-const url = (file: string) => `${base}/logos/${file}`;
-const asset = (lightFilename: string, darkFilename = lightFilename, absolute = false) => {
+
+export const processURL = (url: string, absolute = false) => {
+	console.log('processURL', url, absolute);
 	if (absolute) {
-		return { light: lightFilename, dark: darkFilename };
+		return url;
 	} else {
-		return { light: url(lightFilename), dark: url(darkFilename) };
+		return `${base}/logos/${url}`;
 	}
+};
+
+export const asset = (
+	lightFilename: string,
+	lightabsolute = false,
+	darkFilename = lightFilename,
+	darkabsolute = lightabsolute
+) => {
+	return {
+		light: processURL(lightFilename, lightabsolute),
+		dark: processURL(darkFilename, darkabsolute)
+	};
 };
 
 const Assets = {
@@ -42,8 +55,8 @@ const Assets = {
 	TeX: asset('tex.png'),
 	Markdown: asset('markdown-mark.svg'),
 	Git: asset('git.svg'),
-	Github: asset('github-mark.svg', 'github-mark-white.svg'),
-	GithubActions: asset('github-actions-black.svg', 'github-actions-blue.png'),
+	Github: asset('github-mark.svg', false, 'github-mark-white.svg', false),
+	GithubActions: asset('github-actions-black.svg', false, 'github-actions-blue.png', false),
 	SHKSC: asset('shksc.png'),
 	NDC: asset('ndc.png'),
 	BUET: asset('buet.svg')

@@ -1,6 +1,9 @@
 import BaseData from './base';
 
-const left = { title: BaseData.fullName, icon: 'i-carbon-code' } as const;
+const left = {
+	title: BaseData.firstName + ' ' + BaseData.lastName,
+	icon: 'i-carbon-code'
+} as const;
 
 const items: Array<{
 	title: string;

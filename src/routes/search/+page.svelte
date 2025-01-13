@@ -16,6 +16,7 @@
 	import ExperienceData from '$lib/data/experience';
 	import ProjectsData from '$lib/data/projects';
 	import SkillsData from '$lib/data/skills';
+	import BlogsData from '$lib/data/blogs';
 	import { href } from '$lib/utils';
 	import { mode } from 'mode-watcher';
 
@@ -45,6 +46,7 @@
 		const education = EducationData.items.filter((it) =>
 			it.name.toLowerCase().includes(q.toLowerCase())
 		);
+		const blogs = BlogsData.items.filter((it) => it.name.toLowerCase().includes(q.toLowerCase()));
 
 		const groups: Array<Group> = [];
 
@@ -95,6 +97,19 @@
 					name: it.degree,
 					logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
 					link: `/education/${it.slug}`,
+					color: NAMED_COLORS.gray
+				}))
+			});
+		}
+
+		if (blogs.length) {
+			groups.push({
+				icon: 'i-carbon-blog',
+				name: 'Blogs',
+				items: blogs.map((it) => ({
+					name: it.name,
+					logo: $mode === 'dark' ? it.banner.dark : it.banner.light,
+					link: `/blogs/${it.slug}`,
 					color: NAMED_COLORS.gray
 				}))
 			});

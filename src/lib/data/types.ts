@@ -86,7 +86,7 @@ export interface Education<S extends string = string> extends Item<S> {
 }
 
 export interface Blog {
-	banner: string;
+	banner: Asset;
 	color: Color;
 	slug: string;
 	name: string;

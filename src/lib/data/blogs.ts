@@ -1,10 +1,13 @@
 import type { Blog } from './types';
 import adaptive_md from '../md/blogs/caa_blog.md?raw';
+import { processURL, asset } from './assets';
 
 const items: Array<Blog> = [
 	{
-		banner:
+		banner: asset(
 			'https://images.squarespace-cdn.com/content/v1/5f8de2b5eb427172886cea17/99e035e6-f7d6-4064-95a6-e7c44c77139e/%5BNEURIPS2024%5D+LatinX+in+AI+Workshop+%40+NeurIPS+2024.png',
+			true
+		),
 		color: '#ff0000',
 		slug: 'caa',
 		name: 'Advancing Adversarial Attacks in Tabular Machine Learning: A Deep Dive into CAA',
