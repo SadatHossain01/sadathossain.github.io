@@ -31,7 +31,7 @@
 	<DialogContent class="flex min-h-[70%] min-w-[70%] flex-col">
 		<DialogTitle>{item.label}</DialogTitle>
 		<div
-			class="flex-1 bg-cover bg-center bg-no-repeat"
+			class="flex-1 bg-contain bg-center bg-no-repeat"
 			style={`background-image: url("${item.src}")`}
 		></div>
 		<DialogFooter>

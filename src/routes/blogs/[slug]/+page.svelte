@@ -20,7 +20,6 @@
 				})
 			: ''
 	);
-	console.log(data.item);
 </script>
 
 <BasePage {title}>

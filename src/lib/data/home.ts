@@ -34,8 +34,9 @@ const hero: {
 			href: 'https://www.instagram.com/sadathossain01',
 			icon: 'i-carbon-logo-instagram'
 		},
-		{ label: 'Twitter', href: 'https://x.com/SadatHossain01', icon: 'i-carbon-logo-x' },
-		{ label: 'Email', href: 'mailto:sadatho2014@gmail.com', icon: 'i-carbon-at' }
+		{ label: 'X', href: 'https://x.com/SadatHossain01', icon: 'i-carbon-logo-x' },
+		{ label: 'Primary Mail', href: 'mailto:sadatho2014@gmail.com', icon: 'i-carbon-at' },
+		{ label: 'Secondary Mail', href: 'mailto:sadatdbt@gmail.com', icon: 'i-carbon-at' }
 	]
 };
 

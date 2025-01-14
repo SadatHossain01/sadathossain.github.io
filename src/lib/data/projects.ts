@@ -34,7 +34,7 @@ const items: Array<Project> = [
 		period: {
 			from: new Date(2024, 1)
 		},
-		skills: getSkills('svelte', 'postgresql', 'expressjs', 'sveltekit', 'tailwind', 'ts'),
+		skills: getSkills('svelte', 'postgres', 'expressjs', 'sveltekit', 'tailwind', 'ts'),
 		type: 'Web App'
 	},
 	{
@@ -66,7 +66,7 @@ const items: Array<Project> = [
 		period: {
 			from: new Date(2023, 9)
 		},
-		skills: getSkills('svelte', 'postgresql', 'expressjs', 'sveltekit', 'tailwind', 'ts'),
+		skills: getSkills('svelte', 'postgres', 'expressjs', 'sveltekit', 'tailwind', 'ts'),
 		type: 'Web App'
 	},
 	{

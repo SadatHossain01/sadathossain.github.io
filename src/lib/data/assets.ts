@@ -1,7 +1,6 @@
 import { base } from '$app/paths';
 
 export const processURL = (url: string, absolute = false) => {
-	console.log('processURL', url, absolute);
 	if (absolute) {
 		return url;
 	} else {
