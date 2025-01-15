@@ -21,8 +21,6 @@
 	let to = $derived(getMonthAndYear(it.period.to));
 
 	let period = $derived(`${from} - ${to}`);
-
-	let location = `${it.organization}, ${it.location}`;
 </script>
 
 <FancyCard href={href(`/education/${it.slug}`)}>
@@ -34,12 +32,21 @@
 			<AvatarImage src={$mode === 'dark' ? it.logo.dark : it.logo.light} />
 		</Avatar>
 		<div class="flex flex-col gap-4">
-			<CardTitle>{it.degree}</CardTitle>
+			<CardTitle class="text-lg font-semibold">{it.organization}</CardTitle>
+			<Tooltip openDelay={300}>
+				<TooltipTrigger>
+					<Muted className="flex flex-row items-center gap-2">
+						<Icon icon="i-carbon-education" />
+						<div>{it.degree}</div>
+					</Muted>
+				</TooltipTrigger>
+				<TooltipContent>Degree</TooltipContent>
+			</Tooltip>
 			<Tooltip openDelay={300}>
 				<TooltipTrigger>
 					<Muted className="flex flex-row items-center gap-2">
 						<Icon icon="i-carbon-location" />
-						<div>{location}</div>
+						<div>{it.location}</div>
 					</Muted>
 				</TooltipTrigger>
 				<TooltipContent>Location</TooltipContent>

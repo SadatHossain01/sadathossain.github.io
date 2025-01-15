@@ -15,6 +15,7 @@ const categories = [
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
 	defineSkillCategory({ name: 'Testing', slug: 'test' }),
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
+	defineSkillCategory({ name: 'Security Tools', slug: 'security' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
 	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
@@ -369,6 +370,26 @@ const items = [
 		logo: Assets.Unknown,
 		name: 'Bison',
 		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'javafx',
+		color: 'orange',
+		description:
+			'JavaFX is a software platform for creating and delivering desktop applications, as well as rich internet applications that can run across a wide variety of devices. JavaFX is intended to replace Swing as the standard GUI library for Java SE, but both will be included for the foreseeable future.',
+		logo: Assets.JavaFX,
+		name: 'JavaFX',
+		category: 'devtools'
+	}),
+
+	// Security Tools
+	defineSkill({
+		slug: 'wazuh',
+		color: 'red',
+		description:
+			'Wazuh is a free, open-source and enterprise-ready security monitoring solution for threat detection, integrity monitoring, incident response, and compliance.',
+		logo: Assets.Wazuh,
+		name: 'Wazuh',
+		category: 'security'
 	}),
 
 	// Markup & Style

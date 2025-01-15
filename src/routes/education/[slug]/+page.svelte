@@ -35,8 +35,9 @@
 	{:else}
 		<FancyBanner img={banner}>
 			<div class="flex w-full flex-col items-center justify-center gap-4">
-				<H1>{data.item.degree}</H1>
-				<Muted>{data.item.organization} · {data.item.location}</Muted>
+				<H1>{data.item.organization}</H1>
+				<Muted>{data.item.degree}</Muted>
+				<Muted>{data.item.location}</Muted>
 				<Muted><Muted>{duration}</Muted></Muted>
 				<Separator />
 				<div class="flex flex-row flex-wrap justify-center gap-2">

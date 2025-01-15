@@ -7,38 +7,79 @@ const items: Array<Education> = [
 	{
 		degree: 'Bachelor of Science',
 		description: '',
-		location: 'Bangladesh',
+		location: 'Dhaka, Bangladesh',
 		logo: Assets.BUET,
 		name: 'BSc',
 		organization: 'Bangladesh University of Engineering and Technology',
 		period: { from: new Date(2020, 1, 22) },
 		shortDescription: '',
-		slug: 'bsc',
-		subjects: ['DSA', 'Algorithm', 'Database', 'C', 'C++', 'Java', 'Network', 'Operating System']
+		slug: 'buet',
+		subjects: [
+			'OOP',
+			'Discrete Mathematics',
+			'DSA',
+			'Numerical Methods',
+			'Database',
+			'Compiler',
+			'Computer Architecture',
+			'Microcontroller & Microprocessor',
+			'Operating System',
+			'Computer Network',
+			'AI',
+			'Bioinformatics',
+			'Advanced Graph Theory',
+			'Computer Graphics',
+			'Computer Security',
+			'Machine Learning'
+		]
 	},
 	{
-		degree: 'Higher Secondary School Certificate',
+		degree: 'Higher Secondary Certificate',
 		description: '',
-		location: 'Bangladesh',
+		location: 'Dhaka, Bangladesh',
 		logo: Assets.NDC,
 		name: 'HSC',
 		organization: 'Notre Dame College',
 		period: { from: new Date(2017, 6, 1), to: new Date(2018, 11, 31) },
 		shortDescription: '',
-		slug: 'hsc',
-		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English']
+		slug: 'ndc',
+		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Bangla', 'ICT']
 	},
 	{
 		degree: 'Secondary School Certificate',
 		description: '',
-		location: 'Bangladesh',
+		location: 'Dhaka, Bangladesh',
 		logo: Assets.SHKSC,
 		name: 'SSC',
 		organization: 'Shamsul Haque Khan School & College',
 		period: { from: new Date(2010, 0, 1), to: new Date(2017, 1, 28) },
 		shortDescription: '',
-		slug: 'ssc',
-		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English']
+		slug: 'shksc',
+		subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'English', 'Bangla', 'ICT', 'BGS']
+	},
+	{
+		degree: 'Primary School',
+		description: '',
+		location: 'Dhaka, Bangladesh',
+		logo: Assets.DSBLSC,
+		name: '',
+		organization: 'Dhaka Shiksha Board Laboratory School & College',
+		period: { from: new Date(2007, 0, 1), to: new Date(2009, 11, 31) },
+		shortDescription: '',
+		slug: 'dsblsc',
+		subjects: []
+	},
+	{
+		degree: 'KG',
+		description: '',
+		location: 'Noakhali, Bangladesh',
+		logo: Assets.PKG,
+		name: '',
+		organization: 'Police KG High School',
+		period: { from: new Date(2006, 0, 1), to: new Date(2006, 11, 31) },
+		shortDescription: '',
+		slug: 'pkg',
+		subjects: []
 	}
 ];
 

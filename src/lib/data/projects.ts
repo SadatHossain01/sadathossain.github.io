@@ -3,6 +3,9 @@ import { getSkills } from './skills';
 import type { Project } from './types';
 import taskflow_md from '../md/projects/taskflow.md?raw';
 import exploremate_md from '../md/projects/exploremate.md?raw';
+import wazuh_md from '../md/projects/wazuh.md?raw';
+import dxball_md from '../md/projects/dxball.md?raw';
+import fm_md from '../md/projects/fm.md?raw';
 
 const items: Array<Project> = [
 	{
@@ -70,10 +73,54 @@ const items: Array<Project> = [
 		type: 'Web App'
 	},
 	{
-		slug: 'dxball-remake',
+		slug: 'harmony',
 		color: '#ff3e00',
 		description:
-			'This is an attempt to remake the legendary DxBall 2 as a part of our Level-1 Term-1 project using only C programming language. The game is made using the iGraphics library, which is based on OpenGL and is used to draw 2D graphics.',
+			'Harmony is a social network for students to collaborate each other. It is a place where students can share their knowledge and experience and also can discuss the topics that they are interested in. We expect Harmony to be the hub of the students’ academic enthusiasm and excellence. Features include real-time learning resource management, chat, voting, and file sharing.',
+		shortDescription:
+			'Learning Management Platform for students to collaborate and share knowledge.',
+		links: [
+			{
+				to: 'https://github.com/risenfromashes/harmony-web',
+				label: 'GitHub'
+			},
+			{
+				to: 'https://github.com/risenfromashes/harmony-server',
+				label: 'Harmony Server'
+			}
+		],
+		logo: Assets.Harmony,
+		name: 'Harmony',
+		period: {
+			from: new Date(2022, 8)
+		},
+		skills: getSkills('svelte', 'cpp', 'tailwind', 'postgres'),
+		type: 'Web App'
+	},
+	{
+		slug: 'football-manager',
+		color: '#ff3e00',
+		description: fm_md,
+		shortDescription:
+			'Desktop application for football player management using JavaFX, featuring over 16000 real players.',
+		links: [
+			{
+				to: 'https://github.com/SadatHossain01/football-manager-2021',
+				label: 'GitHub'
+			}
+		],
+		logo: Assets.FootballManager,
+		name: 'Football Manager 2021',
+		period: {
+			from: new Date(2021, 6)
+		},
+		skills: getSkills('java', 'javafx', 'BeautifulSoup', 'python'),
+		type: 'Desktop App'
+	},
+	{
+		slug: 'dxball-remake',
+		color: '#ff3e00',
+		description: dxball_md,
 		shortDescription:
 			'DxBall 2 remake using C programming language. Made with iGraphics library, based on OpenGL. Part of Level-1 Term-1 project.',
 		links: [
@@ -87,38 +134,8 @@ const items: Array<Project> = [
 		period: {
 			from: new Date(2020, 2)
 		},
-		skills: getSkills('c', 'opengl'),
-		type: 'Game',
-		screenshots: [
-			{
-				label: 'Start Menu',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/main-menu.jpg'
-			},
-			{
-				label: 'New Game',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/new.jpg'
-			},
-			{
-				label: 'Instructions',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/instruction.jpg'
-			},
-			{
-				label: 'Gameplay',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/gp2.jpg'
-			},
-			{
-				label: 'Name Entry',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/name.jpg'
-			},
-			{
-				label: 'High Scores',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/hs.jpg'
-			},
-			{
-				label: 'Credits',
-				src: 'https://github.com/SadatHossain01/DxBall-remake/raw/main/assets/JPEG/game_credits.jpg'
-			}
-		]
+		skills: getSkills('c', 'cpp', 'opengl'),
+		type: 'Game'
 	},
 	{
 		slug: 'yet-another-c-compiler',
@@ -142,58 +159,27 @@ const items: Array<Project> = [
 		type: 'Compiler'
 	},
 	{
-		slug: 'harmony',
+		slug: 'wazuh-exploration',
 		color: '#ff3e00',
-		description:
-			'Full stack social media platform for students featuring real-time learning resource management, chat, voting, and file sharing.',
-		shortDescription: 'Social media platform for student resource sharing',
+		description: wazuh_md,
+		shortDescription: 'Security information and event management system exploration',
 		links: [
 			{
-				to: 'https://github.com/risenfromashes/harmony-web',
-				label: 'GitHub'
-			}
-		],
-		logo: Assets.Unknown,
-		name: 'Harmony',
-		period: {
-			from: new Date(2022, 8)
-		},
-		skills: getSkills('svelte', 'tailwind', 'postgresql'),
-		type: 'Web App'
-	},
-	// {
-	// 	slug: 'wazuh-exploration',
-	// 	color: '#ff3e00',
-	// 	description:
-	// 		'Explored open source XDR and SIEM solution, focusing on Malware Detection and File Integrity Module features.',
-	// 	shortDescription: 'Security information and event management system exploration',
-	// 	logo: Assets.Unknown,
-	// 	name: 'Wazuh Exploration Project',
-	// 	period: {
-	// 		from: new Date(2022, 1)
-	// 	},
-	// 	skills: getSkills('security'),
-	// 	type: 'Security'
-	// },
-	{
-		slug: 'football-manager',
-		color: '#ff3e00',
-		description:
-			'Desktop application for football player management using JavaFX. Features multithreaded socket programming and real-time player exchange system.',
-		shortDescription: 'Football club management desktop application',
-		links: [
+				to: 'https://www.youtube.com/embed/Ndw6Fwi2i3w',
+				label: 'Video Demo'
+			},
 			{
-				to: 'https://github.com/SadatHossain01/football-manager-2021',
-				label: 'GitHub'
+				to: 'https://drive.google.com/file/d/1dOlKLEFnIS4G8Gbm7_jTdB1oMcLLxnXX/view?usp=sharing',
+				label: 'Report'
 			}
 		],
-		logo: Assets.Unknown,
-		name: 'Football Club Manager',
+		logo: Assets.Wazuh,
+		name: 'Wazuh Exploration',
 		period: {
-			from: new Date(2021, 6)
+			from: new Date(2022, 1)
 		},
-		skills: getSkills('java', 'javafx'),
-		type: 'Desktop App'
+		skills: getSkills('wazuh'),
+		type: 'Security'
 	}
 ];
 
