@@ -44,7 +44,7 @@
 			it.name.toLowerCase().includes(q.toLowerCase())
 		);
 		const education = EducationData.items.filter((it) =>
-			it.name.toLowerCase().includes(q.toLowerCase())
+			it.organization.toLowerCase().includes(q.toLowerCase())
 		);
 		const blogs = BlogsData.items.filter((it) => it.name.toLowerCase().includes(q.toLowerCase()));
 
@@ -94,7 +94,7 @@
 				icon: 'i-carbon-education',
 				name: 'Education',
 				items: education.map((it) => ({
-					name: it.degree,
+					name: it.organization,
 					logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
 					link: `/education/${it.slug}`,
 					color: NAMED_COLORS.gray
