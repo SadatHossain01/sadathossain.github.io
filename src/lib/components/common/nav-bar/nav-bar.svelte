@@ -71,7 +71,7 @@
 	<!-- sm -->
 	<div class="flex flex-[2] flex-row items-center justify-center sm:hidden">
 		<a href={href('/')}>
-			<Large>{BaseData.fullName}</Large>
+			<Large>{BaseData.firstName + ' ' + BaseData.lastName}</Large>
 		</a>
 	</div>
 	<div class="flex flex-row items-center justify-center sm:hidden">

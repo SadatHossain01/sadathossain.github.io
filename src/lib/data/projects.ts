@@ -6,6 +6,8 @@ import exploremate_md from '../md/projects/exploremate.md?raw';
 import wazuh_md from '../md/projects/wazuh.md?raw';
 import dxball_md from '../md/projects/dxball.md?raw';
 import fm_md from '../md/projects/fm.md?raw';
+import skywatch_md from '../md/projects/skywatch.md?raw';
+import mips_md from '../md/projects/mips.md?raw';
 
 const items: Array<Project> = [
 	{
@@ -98,7 +100,7 @@ const items: Array<Project> = [
 		type: 'Web App'
 	},
 	{
-		slug: 'football-manager',
+		slug: 'fm-2021',
 		color: '#ff3e00',
 		description: fm_md,
 		shortDescription:
@@ -180,6 +182,46 @@ const items: Array<Project> = [
 		},
 		skills: getSkills('wazuh'),
 		type: 'Security'
+	},
+	{
+		slug: 'skywatch',
+		color: '#ff3e00',
+		description: skywatch_md,
+		shortDescription:
+			'Skywatch is a quadcopter built as a part of our microcontroller project for L3T1. It had features to perform aerial surveillance and capture images and videos.',
+		links: [
+			{
+				to: 'https://youtu.be/yqDztcmO_Js',
+				label: 'Video Demo'
+			}
+		],
+		logo: Assets.Skywatch,
+		name: 'SkyWatch',
+		period: {
+			from: new Date(2023, 1)
+		},
+		skills: getSkills('c', 'atmega32'),
+		type: 'Hardware'
+	},
+	{
+		slug: 'mips',
+		color: '#ff3e00',
+		description: mips_md,
+		shortDescription:
+			'8-bit MIPS Computer implementation with pipelining, featuring control path and data path design using digital logic components.',
+		links: [
+			{
+				to: 'https://github.com/SadatHossain01/CSE306-ComputerArchitecture/tree/main/MIPS',
+				label: 'GitHub'
+			}
+		],
+		logo: Assets.MIPS,
+		period: {
+			from: new Date(2023, 1)
+		},
+		name: '8-bit MIPS Microprocessor',
+		skills: getSkills('atmega32', 'c'),
+		type: 'Hardware'
 	}
 ];
 

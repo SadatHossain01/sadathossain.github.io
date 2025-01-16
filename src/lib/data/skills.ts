@@ -11,11 +11,10 @@ const categories = [
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
 	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
 	defineSkillCategory({ name: 'Databases', slug: 'db' }),
-	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
-	defineSkillCategory({ name: 'Testing', slug: 'test' }),
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Security Tools', slug: 'security' }),
+	defineSkillCategory({ name: 'Hardware', slug: 'hardware' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
 	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
@@ -314,7 +313,7 @@ const items = [
 		category: 'devops'
 	}),
 
-	// Testing
+	// Dev Tools
 	defineSkill({
 		slug: 'selenium',
 		color: 'green',
@@ -322,7 +321,7 @@ const items = [
 			'Selenium is a portable framework for testing web applications. Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language.',
 		logo: Assets.Selenium,
 		name: 'Selenium',
-		category: 'test'
+		category: 'devtools'
 	}),
 	defineSkill({
 		slug: 'postman',
@@ -331,10 +330,9 @@ const items = [
 			'Postman is a collaboration platform for API development. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.',
 		logo: Assets.Postman,
 		name: 'Postman',
-		category: 'test'
+		category: 'devtools'
 	}),
 
-	// Dev Tools
 	defineSkill({
 		slug: 'git',
 		color: 'red',
@@ -428,6 +426,17 @@ const items = [
 		logo: Assets.Markdown,
 		name: 'Markdown',
 		category: 'markup-style'
+	}),
+
+	// Hardware
+	defineSkill({
+		slug: 'atmega32',
+		color: 'black',
+		description:
+			'The ATmega32 is a low-power CMOS 8-bit microcontroller based on the AVR enhanced RISC architecture. By executing powerful instructions in a single clock cycle, the ATmega32 achieves throughputs approaching 1 MIPS per MHz, allowing the system designer to optimize power consumption versus processing speed.',
+		logo: Assets.Atmel,
+		name: 'ATmega32',
+		category: 'hardware'
 	})
 ] as const;
 
