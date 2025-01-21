@@ -16,7 +16,7 @@
 
 	let { data }: { data: { item?: Education } } = $props();
 
-	let title = $derived(`${data?.item?.name ?? 'Not Found'} - Skills`);
+	let title = $derived(`${data?.item?.name ?? 'Not Found'} - Education`);
 	let banner = $derived(
 		($mode == 'dark' ? data?.item?.logo.dark : data.item?.logo.light) ?? Assets.Unknown.light
 	);
